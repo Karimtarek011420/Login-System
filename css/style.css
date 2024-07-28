@@ -1,0 +1,14 @@
+header{
+    background-color: #24353F;
+}
+.loginPage{
+    background-color: #24353F;
+    box-shadow: 10px 10px 20px  black;
+
+}
+header div h1 ,h3{
+    color: #17A2B8;
+}
+input:focus{
+    border: 1px #17A2B8 solid !important;
+}

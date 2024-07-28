@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="vh-100 py-5 text-center">
+      <div class="w-75 m-auto loginPage p-5">
+        <h1 class="pb-4">Smart Login System</h1>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInputName" placeholder="name@example.com" />
+          <label for="floatingInput"> Enter Your Name </label>
+          <div id="nameAlert" class="alert alert-danger my-2 d-none ">Name must start with capital letter and contain 3-8 characters</div>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com"
+          />
+          <label for="floatingInput"> Enter Your Email address</label>
+          <div id="emailAlert" class="alert alert-danger my-2 d-none ">Email must be @gmail.com</div>
+
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingInputPassword" placeholder="Password" />
+          <label for="floatingPassword">Enter Your Password</label>
+          <div id="passAlert" class="alert alert-danger my-2 d-none ">Password must be 5-15 characters</div>
+
+        </div>
+        <div class="alert text-success pt-3 d-none fs-5" id="success">
+          success
+        </div>
+        <div class="alert text-danger pt-3 d-none fs-5" id="error">
+          All inputs is required Try agian
+        </div>
+        <div class="alert text-danger pt-3 d-none fs-5" id="checkExist">
+          this account? already exists
+        </div>
+        <button type="button" id="btnSignUp" class="btn btn-outline-info form-control mb-4 d-block" onclick="getUser()">Sign Up</button>
+        <p class="text-white">You have an account?<a href="./index.html" id="signlogo" class="text-decoration-none text-white">Sign In</a></p>
+        <a href="./index.html" class="text-decoration-none"> <button type="button" id="btnSignIn" class="btn btn-outline-info form-control mb-4 d-none">Sign In</button>
+        </a>
+      </div>
+    </header>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
